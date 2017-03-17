@@ -1,64 +1,169 @@
-html, body {
-    margin: 0;
-    height:100%;
-    width:100%;
-    padding:0;
-    font-family: 'Lato', sans-serif;
+
+body {
+  text-align: center;
 }
 
-/* Links in the nav bar */
-.navbar-default .navbar-nav>li>a:hover {
-    background-color: blue;
+/* ----------------------------------
+NAVBAR
+------------------------------------*/
+
+
+
+/* ----------------------------------
+NAVBAR END
+------------------------------------*/
+
+
+#about {
+  height: 1200px;
+  background-color: white;
 }
 
-.navbar-default .navbar-nav>li>a{
-    width: 100px;
-    text-align: center;
-}
-
-.navbar-default {
-  margin: 0;
-  border: none;
-}
-
-.container {
-    display: block;
-    background: #CFF;
-    height:110%;
-    width:100%;
-    box-sizing:border-box;
-    display:table;
-}
-
-#hi_container{
-  background-color: grey;
-
-}
-
-#intro_container{
-  background-color: purple;
-
-}
-
-#skills_container{
-  background-color: blue;
-}
-
-#projects_container{
-  background-color: green;
-}
-
-#about_container{
-  background-color: yellow;
-}
-
-#contact_container{
+#jaypic {
+  margin: 0 auto;
+  height:300px;
+  width: 300px;
+  border-radius: 50%;
   background-color: red;
 }
 
-#hi_text{
-  text-align: center;
-  /*Vertical align text in a cell. Need parent styling too*/
-  display: table-cell;
-  vertical-align: middle;
+#about_text {
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+#skills {
+  height: 800px;
+  background-color: gray;
+}
+
+#skills span {
+    position: relative;
+    top: -2em;
+    left: 1em;
+    font-size: 1.4em;
+    font-weight: bolder;
+    font-family: helvetica;
+    color: #fff;
+}
+
+progress {
+    background-color: #f3f3f3;
+    border: 0;
+    height: 2.5em;
+    width: 100%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0eaf0;
+}
+
+progress::-webkit-progress-value {
+    background-color: #329ad1;
+}
+
+progress::-moz-progress-bar {
+    background-color: #329ad1;
+}
+
+/* ------------------------------
+Work Gallery
+---------------------------------*/
+
+#work {
+	height: ;
+}
+
+#work h1 {
+	margin-bottom: 20px; /* space after title */
+}
+
+.gallery li {
+	margin: 0 auto; /*center boxes within cols horizontally*/
+	display: inline-block;
+	transform: translate(0,0); /*center vertically */
+	padding: 10px; /*space between boxes */
+}
+
+
+
+.text-content {
+	background: #2C3E50;
+	opacity: .5;
+	color: white;
+	cursor: pointer;
+	display: table;
+	height: 267px;
+	width: 400px;
+	position: absolute;
+	left: 10px; /*accomadate horiz padding */
+	top: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+
+}
+
+.text-content span {
+	display: table-cell;
+	text-align: center; /*center text */
+	vertical-align: middle;
+	font-size: 2em; /*20px */
+}
+
+.gallery li:hover .text-content, .gallery li:focus .text-content, .gallery li:active .text-content {
+	opacity: .75;
+}
+
+/* ----------------------------------
+End of Work Gallery
+------------------------------------*/
+
+/* -----------------------------------
+Projects page
+-------------------------------------*/
+
+#projects {
+  max-height: 1800px;
+
+}
+
+#contact {
+  min-height: 200px;
+  background-color: gray;
+  padding: 3em;
+}
+
+i {
+  color: white;
+  margin: 0 0.5em;
+}
+
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+
+.fa-arrow-down {
+  margin: 0.5em;
+}
+
+.fa-arrow-down:hover {
+   animation: bounce 1s;
+   color: blue;
 }

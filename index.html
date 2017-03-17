@@ -1,68 +1,173 @@
 <!DOCTYPE html>
 
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 </head>
 
-
 <body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
 
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#hi_container">Hi <span class="sr-only">(current)</span></a></li>
-        <li><a href="#intro_container">Intro</a></li>
-        <li><a href="#skills_container">Skills</a></li>
-        <li><a href="#projects_container">Projects</a></li>
-        <li><a href="#about_container">About</a></li>
-        <li><a href="#contact_container">Contact</a></li>
-
-        <!-- Change class to active after pressed via javascript? -->
-
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div id="hi_container" class="container ">
-  <div id="hi_text" >
-    <h1> Hi, I'm jay. </h1>
-    <h1> I like to code </h1>
-    <h1> web and mobile </h1>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
   </div>
+</nav>
+<!-- End NAVBAR -->
+
+
+  <div class="row justify-content-sm-center align-items-center" id="about">
+    <div class ="col-sm-6">
+      <div id="jaypic">
+
+      </div>
+      <p id="about_text">Tousled bicycle rights mustache, hashtag freegan fam occupy farm-to-table lumbersexual lyft viral distillery. Vexillologist skateboard 90's, cardigan scenester iceland four loko whatever 3 wolf moon jean shorts lyft air plant. Poutine aesthetic vinyl, listicle offal fingerstache godard knausgaard fixie snackwave. Dreamcatcher cronut yr, kickstarter drinking vinegar affogato glossier raw denim echo park cardigan marfa. Sustainable twee PBR&B green juice, fap letterpress squid cold-pressed readymade poutine roof party. </p>
+
+    </div>
+  </div>
+
+  <div class="row justify-content-sm-center align-items-center" id="skills">
+    <div class ="col-sm-8">
+        <section id="skills_bars">
+          <progress value="80" max="100"></progress><span>JavaScript/jQuery</span>
+          <progress value="70" max="100"></progress><span>HTML5/CSS3</span>
+          <progress value="60" max="100"></progress><span>NodeJS</span>
+          <progress value="70" max="100"></progress><span>Java</span>
+          <progress value="60" max="100"></progress><span>Swift</span>
+          <progress value="80" max="100"></progress><span>C/C++</span>
+        </section>
+    </div>
+  </div>
+
+  <div class="container-fluid col-sm-10" id="projects">
+    <div id="work" class="anchor">
+      <ul class="gallery text-center list-unstyled">
+        <li>
+          <a href="#">
+            <img class="img-responsive center-block" src="http://res.cloudinary.com/laurarobertson/image/upload/v1489715601/sample_ughkuz.jpg" alt="">
+            <span class="text-content"><span>Project 1</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="img-responsive center-block" src="http://res.cloudinary.com/laurarobertson/image/upload/v1489715601/sample_ughkuz.jpg" alt="">
+            <span class="text-content"><span>Project 2</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="img-responsive center-block" src="http://res.cloudinary.com/laurarobertson/image/upload/v1489715601/sample_ughkuz.jpg" alt="">
+            <span class="text-content"><span>Project 3</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="img-responsive center-block" src="http://res.cloudinary.com/laurarobertson/image/upload/v1489715601/sample_ughkuz.jpg" alt="">
+            <span class="text-content"><span>Project 4</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="img-responsive center-block" src="http://res.cloudinary.com/laurarobertson/image/upload/v1489715601/sample_ughkuz.jpg" alt="">
+            <span class="text-content"><span>Project 4</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="img-responsive center-block" src="http://res.cloudinary.com/laurarobertson/image/upload/v1489715601/sample_ughkuz.jpg" alt="">
+            <span class="text-content"><span>Project 4</span></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 </div>
-<div id="intro_container" class="container">
-  <div class="col-md-6"
+
+  <div class="row justify-content-sm-center align-items-center" id="contact">
+      <div class="col=sm-3">
+    <a href="#">
+      <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div class="col=sm-3">
+    <a href="#">
+      <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div class="col=sm-3">
+    <a href="#">
+      <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div class="col=sm-3">
+    <a href="#">
+      <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <div class="col-12" id="arrow">
+    <i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
+  </div>
+
+  <form style="display: none;" action="#" method="post" enctype="text/plain">
+    Name: <br>
+    <input type="text" name="name" size="50">
+    <br>
+    Email: <br>
+    <input type="text" name="email" size="50">
+    <br>
+    Message: <br>
+    <input type="text" name="message" size="50">
+    <br>
+  </form>
+
+
 </div>
-<div id="skills_container" class="container">
-  <p> Wow stuff here </p>
-</div>
-<div id="projects_container" class="container">
-  <p> Wow stuff here </p>
-</div>
-<div id="about_container" class="container">
-  <p> Wow stuff here </p>
-</div>
-<div id="contact_container" class="container">
-  <p> Wow stuff here </p>
-</div>
+
+
+
+
+    <!--
+      <form>
+        <div class="row">
+        Name:<br>
+        <input type="text" placeholder="John Doe" /><br>
+        Email:<br>
+      </div>
+        <input type="text" placeholder="john@doe.com"/><br>
+        Message:<br>
+        <textarea placeholder="your message..." cols="63" rows="5"></textarea><br>
+        <input type="button" value="send"/>
+      </form>
+    -->
+
 </body>
