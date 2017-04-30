@@ -2,6 +2,13 @@
 body {
   text-align: center;
 }
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Quicksand', sans-serif;
+}
 
 /* ----------------------------------
 NAVBAR
@@ -29,21 +36,18 @@ NAVBAR END
 
 #about_text {
   margin-top: 10px;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 #skills {
   height: 800px;
-  background-color: gray;
 }
 
 #skills span {
+    top: -2.1em;
     position: relative;
-    top: -2em;
-    left: 1em;
-    font-size: 1.4em;
-    font-weight: bolder;
-    font-family: helvetica;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
     color: #fff;
 }
 
@@ -55,16 +59,17 @@ progress {
 }
 
 progress::-webkit-progress-bar {
-    background-color: #e0eaf0;
+    background-color: #f5f5f5;
 }
 
 progress::-webkit-progress-value {
-    background-color: #329ad1;
+    background-color: #353439;
 }
 
 progress::-moz-progress-bar {
-    background-color: #329ad1;
+    background-color: #f5f5f5;
 }
+
 
 /* ------------------------------
 Work Gallery
@@ -96,7 +101,7 @@ Work Gallery
 	height: 267px;
 	width: 400px;
 	position: absolute;
-	left: 10px; /*accomadate horiz padding */
+	left: 10px;
 	top: 10px;
 	opacity: 0;
 	-webkit-transition: opacity 500ms;
@@ -108,13 +113,13 @@ Work Gallery
 
 .text-content span {
 	display: table-cell;
-	text-align: center; /*center text */
+	text-align: center;
 	vertical-align: middle;
-	font-size: 2em; /*20px */
+	font-size: 2em;
 }
 
 .gallery li:hover .text-content, .gallery li:focus .text-content, .gallery li:active .text-content {
-	opacity: .75;
+	opacity: .65;
 }
 
 /* ----------------------------------
@@ -127,17 +132,22 @@ Projects page
 
 #projects {
   max-height: 1800px;
+  margin: 50px auto;
 
 }
+
+/*******
+Contact page
+********/
 
 #contact {
   min-height: 200px;
-  background-color: gray;
   padding: 3em;
+  text-align: center;
 }
 
-i {
-  color: white;
+.fa {
+  color: #2f3237;
   margin: 0 0.5em;
 }
 
@@ -159,11 +169,56 @@ i {
 	}
 }
 
-.fa-arrow-down {
-  margin: 0.5em;
+.fa-envelope {
+  margin: .75em;
 }
 
-.fa-arrow-down:hover {
+.fa-envelope:hover {
    animation: bounce 1s;
    color: blue;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 1em !important;
+  width: 100%;
+  letter-spacing: 0.1em;
+  border: 1px solid #2f3237;
+  border-radius: 5px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #2f3237;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #2f3237;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #2f3237;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #2f3237;
+}
+
+#message {
+  height: 100px;
+}
+
+.fontAwesome {
+  font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+
+.submitBtn {
+  width: 100%;
+  color: #2f3237;
+  background-color: white;
+  border: 1px solid #2f3237;
+  margin-top: 0.75em;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.submitBtn:hover {
+    color: white;
+    background-color: #353439;
 }
