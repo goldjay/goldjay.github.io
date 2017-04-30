@@ -22,8 +22,9 @@ NAVBAR END
 
 
 #about {
-  height: 1200px;
+  height: 800px;
   background-color: white;
+
 }
 
 #jaypic {
@@ -34,9 +35,15 @@ NAVBAR END
   background-color: red;
 }
 
-#about_text {
+.about_text {
   margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  color: #353439;
+}
+
+#title_name {
+  font-size: 2em;
+  letter-spacing: 2px;
 }
 
 #skills {
@@ -175,7 +182,7 @@ Contact page
 
 .fa-envelope:hover {
    animation: bounce 1s;
-   color: blue;
+   color: #31387E;
 }
 
 input, textarea {
@@ -218,7 +225,11 @@ input, textarea {
   padding: 10px;
 }
 
+.social:hover {
+  color: #F6C02D;
+}
+
 .submitBtn:hover {
     color: white;
-    background-color: #353439;
+    background-color: #0064ab;
 }
